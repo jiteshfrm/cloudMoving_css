@@ -1,0 +1,65 @@
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  background-color: #addbef;
+  font-size: 18px;
+}
+
+.container_clouds {
+  height: 100%;
+  opacity: 0.4;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.clouds1 {
+  background-image: url("./clouds_1.png");
+  animation: clouds1_loop1 20s infinite linear;
+}
+
+.clouds2 {
+  background-image: url("./clouds_2.png");
+  animation: clouds2_loop2 15s infinite linear;
+}
+
+.clouds3 {
+  background-image: url("./clouds_3.png");
+  animation: clouds2_loop2 17s infinite linear;
+}
+
+.clouds1,
+.clouds2,
+.clouds3 {
+  background-repeat: repeat-x;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.about_container {
+  padding: 50px;
+  padding-top: 300px;
+}
+
+@keyframes clouds1_loop1 {
+  to {
+    background-position: -1000px 0;
+  }
+}
+@keyframes clouds2_loop2 {
+  to {
+    background-position: -1000px 0;
+  }
+}
+@keyframes clouds3_loop3 {
+  to {
+    background-position: -1579px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
